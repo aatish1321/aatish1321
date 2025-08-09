@@ -1,3 +1,8 @@
+
+<div align="center">
+  <img height="150" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGdqaGFnNmsyNnNrYzJlcDdqY3EwaGxpajNwczZ2YThuYW9tM2JldyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5ndklThG9vUUdTmgMn/giphy.gif"  />
+</div>
+
 # 💫 About Me:
 Hello, my name is Aatish,<br>and I'm a passionate and aspiring backend developer.<br>I'm eager to build a strong foundation in server-side technologies,<br>database management, and API development.<br>I'm driven by the challenge of creating robust, efficient, and scalable systems<br>that power the user-facing experiences we all rely on.<br>I'm currently focused on mastering key languages and frameworks<br>and I'm excited to contribute to innovative projects as I continue<br>my journey in backend development.<br><br>
 
