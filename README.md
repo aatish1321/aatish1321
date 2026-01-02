@@ -3,7 +3,15 @@
 </div>
 
 # 💫 About Me:
-Hello, my name is Aatish,<br>and I'm a passionate and aspiring fullstack developer.<br>I'm eager to build a strong foundation in both front end and backend technologies,I'm driven by the challenge of creating robust, efficient, and scalable systems<br>that power the user-facing experiences we all rely on.<br>I'm currently focused on mastering key languages and frameworks<br>and I'm excited to contribute to innovative projects as I continue<br>my journey in backend development.<br><br>
+
+
+```javascript
+const aatish = {
+  role: "Aspiring Full Stack Developer",
+  passion: ["Scalable Systems", "Efficient Code", "User Experience"],
+  currentFocus: "Mastering Backend & Frontend Technologies",
+  goal: "Building robust software that powers the web."
+};
 
 <br>My linkedin: https://www.linkedin.com/in/aatish-ajay-b07993171/ <br>
 
