@@ -4,7 +4,7 @@
 
 **`FULL-STACK DEVELOPER`**
 
-I’m a passionate developer who enjoys building end-to-end applications that are scalable and user-friendly. I spend my days (and sometimes nights) diving into system architecture and refining frontend interactions.
+"I’m a passionate developer who enjoys building end-to-end applications that are scalable and user-friendly. I spend my days (and sometimes nights) diving into system architecture and refining frontend interactions."
 
 ---
 
