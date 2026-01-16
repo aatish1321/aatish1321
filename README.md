@@ -2,7 +2,11 @@
 
 **`FULL-STACK-DEVELOPER`**
 
+
 I’m a passionate developer who enjoys building end-to-end applications that are scalable and user-friendly. I spend my days (and sometimes nights) diving into system architecture and refining frontend interactions.
+
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/aatish-ajay) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:aatishajay@gmail.com) 
 
 
 ### 🧰 Languages and Tools
@@ -22,3 +26,16 @@ I’m a passionate developer who enjoys building end-to-end applications that ar
 
 
 #
+
+
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=aatish1321&theme=gotham&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=aatish1321&theme=gotham&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=aatish1321&theme=gotham&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+
+
+
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+
