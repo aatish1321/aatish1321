@@ -1,0 +1,480 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" width="1000" height="420">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,900;1,700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap');
+            
+            .text-backend { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 110px; fill: #101218; letter-spacing: -3px; }
+            .text-sub { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-size: 19px; fill: #39424e; line-height: 1.6; }
+            
+            .led-on { fill: #cfd9ff; filter: drop-shadow(0 0 6px rgba(130, 160, 255, 0.8)); }
+            .led-off { fill: #2a2e38; opacity: 0.8; }
+            
+            @keyframes ledBlink { 0%, 54% { opacity: 1; } 55%, 100% { opacity: 0.15; } }
+            @keyframes ledTwinkle { 0%, 22%, 58%, 100% { opacity: 1; } 34%, 74% { opacity: 0.15; } }
+            @keyframes ledPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+            
+            .blink { animation: ledBlink infinite; }
+            .twinkle { animation: ledTwinkle infinite; }
+            .pulse { animation: ledPulse infinite; }
+            
+            @keyframes stickerBob {
+                0%, 100% { transform: translateY(0) rotate(-4deg); }
+                50% { transform: translateY(-5px) rotate(-4deg); }
+            }
+            .card-group { animation: stickerBob 5s ease-in-out infinite; transform-origin: center; }
+            
+            .card-head { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px; fill: #ffffff; letter-spacing: 2px; text-transform: uppercase; }
+            .card-name { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 900; font-size: 26px; fill: #101218; letter-spacing: -1px; }
+            .card-role-title { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; fill: #1e3a8a; letter-spacing: 1.5px; }
+            .card-label { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 11px; fill: #5b6472; letter-spacing: 1px; }
+            .card-val-accent { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 13.5px; fill: #1e3a8a; }
+            .card-val { font-family: 'Archivo', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 13.5px; fill: #101218; }
+            .card-foot { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 10px; fill: #5b6472; letter-spacing: 2px; }
+        </style>
+        
+        <filter id="sticker-edge">
+            <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="3" seed="7" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" />
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1000" height="420" fill="#ffffff" rx="16" />
+    <rect width="1000" height="420" fill="none" rx="16" stroke="#f0f0f0" stroke-width="2"/>
+
+    <!-- Left Content -->
+    <g transform="translate(50, 0)">
+        <text x="0" y="110" class="text-backend">Backend</text>
+        
+        <!-- Matrix Pill -->
+        <g transform="translate(0, 130)">
+            <rect width="796" height="122" rx="14" fill="#101218" stroke="#101218" stroke-width="2" />
+            <rect width="796" height="122" rx="14" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.08" />
+            <rect x="22" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="36" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.25s; animation-delay: 0.66s;" />
+            <rect x="50" y="14" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.45s; animation-delay: 0.25s;" />
+            <rect x="64" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="78" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="92" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="106" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.26s; animation-delay: 0.08s;" />
+            <rect x="120" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.59s; animation-delay: 1.21s;" />
+            <rect x="134" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.21s; animation-delay: 1.72s;" />
+            <rect x="148" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="162" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="176" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="190" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="204" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.6s; animation-delay: 1.41s;" />
+            <rect x="218" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.57s; animation-delay: 0.38s;" />
+            <rect x="232" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.81s; animation-delay: 0.37s;" />
+            <rect x="246" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="260" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="274" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.38s; animation-delay: 0.91s;" />
+            <rect x="288" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="302" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="316" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="330" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.73s; animation-delay: 1.45s;" />
+            <rect x="344" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="358" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.51s; animation-delay: 1.29s;" />
+            <rect x="372" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.34s; animation-delay: 0.7s;" />
+            <rect x="386" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="400" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.24s; animation-delay: 1.69s;" />
+            <rect x="414" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.39s; animation-delay: 1.86s;" />
+            <rect x="428" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="442" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.74s; animation-delay: 2.08s;" />
+            <rect x="456" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.7s; animation-delay: 1.53s;" />
+            <rect x="470" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.49s; animation-delay: 0.85s;" />
+            <rect x="484" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.46s; animation-delay: 1.64s;" />
+            <rect x="498" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.3s; animation-delay: 0.41s;" />
+            <rect x="512" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="526" y="14" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.49s; animation-delay: 0.91s;" />
+            <rect x="540" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="554" y="14" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.43s; animation-delay: 2.02s;" />
+            <rect x="568" y="14" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.61s; animation-delay: 0.08s;" />
+            <rect x="582" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.92s; animation-delay: 0.16s;" />
+            <rect x="596" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="610" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="624" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="638" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.58s; animation-delay: 1.2s;" />
+            <rect x="652" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.46s; animation-delay: 0.34s;" />
+            <rect x="666" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="680" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="694" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="708" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="722" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.54s; animation-delay: 1.03s;" />
+            <rect x="736" y="14" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="750" y="14" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.85s; animation-delay: 2.39s;" />
+            <rect x="764" y="14" width="10" height="10" rx="2" class="led-off" />
+            <rect x="22" y="28" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.12s; animation-delay: 0.22s;" />
+            <rect x="36" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="50" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="64" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="78" y="28" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.75s; animation-delay: 0.37s;" />
+            <rect x="92" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="106" y="28" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.63s; animation-delay: 1.01s;" />
+            <rect x="120" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="134" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="148" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="162" y="28" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.89s; animation-delay: 1.43s;" />
+            <rect x="176" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="190" y="28" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.15s; animation-delay: 2.33s;" />
+            <rect x="204" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="218" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="232" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="246" y="28" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.42s; animation-delay: 0.27s;" />
+            <rect x="260" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="274" y="28" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="288" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="302" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="316" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="330" y="28" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.58s; animation-delay: 0.82s;" />
+            <rect x="344" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="358" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="372" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="386" y="28" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.98s; animation-delay: 1.09s;" />
+            <rect x="400" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="414" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="428" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="442" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="456" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="470" y="28" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.95s; animation-delay: 1.83s;" />
+            <rect x="484" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="498" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="512" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="526" y="28" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="540" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="554" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="568" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="582" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="596" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="610" y="28" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.77s; animation-delay: 0.72s;" />
+            <rect x="624" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="638" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="652" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="666" y="28" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="680" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="694" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="708" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="722" y="28" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="736" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="750" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="764" y="28" width="10" height="10" rx="2" class="led-off" />
+            <rect x="22" y="42" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.48s; animation-delay: 1.83s;" />
+            <rect x="36" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="50" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="64" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="78" y="42" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="92" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="106" y="42" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="120" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="134" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="148" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="162" y="42" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.28s; animation-delay: 1.17s;" />
+            <rect x="176" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="190" y="42" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.87s; animation-delay: 2.11s;" />
+            <rect x="204" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="218" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="232" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="246" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="260" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="274" y="42" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.63s; animation-delay: 0.58s;" />
+            <rect x="288" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="302" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="316" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="330" y="42" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="344" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="358" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="372" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="386" y="42" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.35s; animation-delay: 1.17s;" />
+            <rect x="400" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="414" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="428" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="442" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="456" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="470" y="42" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.96s; animation-delay: 1.28s;" />
+            <rect x="484" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="498" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="512" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="526" y="42" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.43s; animation-delay: 1.14s;" />
+            <rect x="540" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="554" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="568" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="582" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="596" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="610" y="42" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="624" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="638" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="652" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="666" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="680" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="694" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="708" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="722" y="42" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.68s; animation-delay: 2.09s;" />
+            <rect x="736" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="750" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="764" y="42" width="10" height="10" rx="2" class="led-off" />
+            <rect x="22" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.94s; animation-delay: 2.23s;" />
+            <rect x="36" y="56" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.48s; animation-delay: 0.96s;" />
+            <rect x="50" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.99s; animation-delay: 1.24s;" />
+            <rect x="64" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.65s; animation-delay: 0.15s;" />
+            <rect x="78" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.26s; animation-delay: 0.55s;" />
+            <rect x="92" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="106" y="56" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.21s; animation-delay: 1.7s;" />
+            <rect x="120" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.61s; animation-delay: 2.17s;" />
+            <rect x="134" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.33s; animation-delay: 0.57s;" />
+            <rect x="148" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.59s; animation-delay: 0.32s;" />
+            <rect x="162" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="176" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="190" y="56" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="204" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="218" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="232" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="246" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="260" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="274" y="56" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="288" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.64s; animation-delay: 1.14s;" />
+            <rect x="302" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.54s; animation-delay: 0.23s;" />
+            <rect x="316" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.84s; animation-delay: 0.99s;" />
+            <rect x="330" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.41s; animation-delay: 2.36s;" />
+            <rect x="344" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="358" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="372" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="386" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.31s; animation-delay: 1.75s;" />
+            <rect x="400" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="414" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="428" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="442" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="456" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="470" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.65s; animation-delay: 0.46s;" />
+            <rect x="484" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="498" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="512" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="526" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.45s; animation-delay: 0.44s;" />
+            <rect x="540" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.65s; animation-delay: 2.22s;" />
+            <rect x="554" y="56" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.65s; animation-delay: 2.05s;" />
+            <rect x="568" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.29s; animation-delay: 2.4s;" />
+            <rect x="582" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="596" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="610" y="56" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.94s; animation-delay: 2.22s;" />
+            <rect x="624" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="638" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="652" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="666" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="680" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="694" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="708" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="722" y="56" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.5s; animation-delay: 1.17s;" />
+            <rect x="736" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="750" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="764" y="56" width="10" height="10" rx="2" class="led-off" />
+            <rect x="22" y="70" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.76s; animation-delay: 2.17s;" />
+            <rect x="36" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="50" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="64" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="78" y="70" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.88s; animation-delay: 2.36s;" />
+            <rect x="92" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="106" y="70" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.87s; animation-delay: 1.88s;" />
+            <rect x="120" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="134" y="70" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.96s; animation-delay: 2.3s;" />
+            <rect x="148" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="162" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="176" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="190" y="70" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="204" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="218" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="232" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="246" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="260" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="274" y="70" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.48s; animation-delay: 0.71s;" />
+            <rect x="288" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="302" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="316" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="330" y="70" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.24s; animation-delay: 1.3s;" />
+            <rect x="344" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="358" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="372" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="386" y="70" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.3s; animation-delay: 1.4s;" />
+            <rect x="400" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="414" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="428" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="442" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="456" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="470" y="70" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="484" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="498" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="512" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="526" y="70" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="540" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="554" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="568" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="582" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="596" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="610" y="70" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.3s; animation-delay: 1.22s;" />
+            <rect x="624" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="638" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="652" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="666" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="680" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="694" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="708" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="722" y="70" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.32s; animation-delay: 0.16s;" />
+            <rect x="736" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="750" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="764" y="70" width="10" height="10" rx="2" class="led-off" />
+            <rect x="22" y="84" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.93s; animation-delay: 2.26s;" />
+            <rect x="36" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="50" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="64" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="78" y="84" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="92" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="106" y="84" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.24s; animation-delay: 0.1s;" />
+            <rect x="120" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="134" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="148" y="84" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.95s; animation-delay: 1.4s;" />
+            <rect x="162" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="176" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="190" y="84" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="204" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="218" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="232" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="246" y="84" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.88s; animation-delay: 0.49s;" />
+            <rect x="260" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="274" y="84" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.63s; animation-delay: 0.95s;" />
+            <rect x="288" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="302" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="316" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="330" y="84" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.02s; animation-delay: 2.23s;" />
+            <rect x="344" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="358" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="372" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="386" y="84" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.22s; animation-delay: 1.49s;" />
+            <rect x="400" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="414" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="428" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="442" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="456" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="470" y="84" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="484" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="498" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="512" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="526" y="84" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.33s; animation-delay: 0.51s;" />
+            <rect x="540" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="554" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="568" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="582" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="596" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="610" y="84" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.44s; animation-delay: 0.84s;" />
+            <rect x="624" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="638" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="652" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="666" y="84" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.78s; animation-delay: 0.89s;" />
+            <rect x="680" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="694" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="708" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="722" y="84" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.99s; animation-delay: 1.3s;" />
+            <rect x="736" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="750" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="764" y="84" width="10" height="10" rx="2" class="led-off" />
+            <rect x="22" y="98" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.3s; animation-delay: 2.37s;" />
+            <rect x="36" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="50" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="64" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="78" y="98" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="92" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="106" y="98" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.4s; animation-delay: 1.33s;" />
+            <rect x="120" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="134" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="148" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="162" y="98" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.89s; animation-delay: 0.32s;" />
+            <rect x="176" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="190" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="204" y="98" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.8s; animation-delay: 1.78s;" />
+            <rect x="218" y="98" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.69s; animation-delay: 1.45s;" />
+            <rect x="232" y="98" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.57s; animation-delay: 1.52s;" />
+            <rect x="246" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="260" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="274" y="98" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.11s; animation-delay: 0.6s;" />
+            <rect x="288" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="302" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="316" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="330" y="98" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.37s; animation-delay: 1.02s;" />
+            <rect x="344" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="358" y="98" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 1.28s; animation-delay: 0.8s;" />
+            <rect x="372" y="98" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.35s; animation-delay: 0.63s;" />
+            <rect x="386" y="98" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.19s; animation-delay: 1.03s;" />
+            <rect x="400" y="98" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 1.4s; animation-delay: 2.27s;" />
+            <rect x="414" y="98" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.18s; animation-delay: 2.0s;" />
+            <rect x="428" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="442" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="456" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="470" y="98" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="484" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="498" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="512" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="526" y="98" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="540" y="98" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 1.97s; animation-delay: 0.1s;" />
+            <rect x="554" y="98" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.82s; animation-delay: 1.91s;" />
+            <rect x="568" y="98" width="10" height="10" rx="2" class="led-on blink" style="animation-duration: 2.82s; animation-delay: 0.5s;" />
+            <rect x="582" y="98" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.4s; animation-delay: 0.85s;" />
+            <rect x="596" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="610" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="624" y="98" width="10" height="10" rx="2" class="led-on" style="" />
+            <rect x="638" y="98" width="10" height="10" rx="2" class="led-on pulse" style="animation-duration: 2.95s; animation-delay: 1.8s;" />
+            <rect x="652" y="98" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.76s; animation-delay: 2.34s;" />
+            <rect x="666" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="680" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="694" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="708" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="722" y="98" width="10" height="10" rx="2" class="led-on twinkle" style="animation-duration: 2.79s; animation-delay: 0.06s;" />
+            <rect x="736" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="750" y="98" width="10" height="10" rx="2" class="led-off" />
+            <rect x="764" y="98" width="10" height="10" rx="2" class="led-off" />
+        </g>
+        
+
+    </g>
+
+    <!-- Right Content (ID Card) -->
+    <g transform="translate(800, 210)">
+        <g class="card-group">
+            <g transform="translate(-140, -160)">
+                <!-- Blue Shadow -->
+                <rect x="12" y="12" width="280" height="330" rx="16" fill="#1e3a8a" filter="url(#sticker-edge)" />
+                <!-- White Border -->
+                <rect x="-4" y="-4" width="288" height="338" rx="18" fill="#ffffff" filter="url(#sticker-edge)" />
+                <!-- Card Background -->
+                <rect x="0" y="0" width="280" height="330" rx="16" fill="#ffffff" stroke="#101218" stroke-width="2" filter="url(#sticker-edge)" />
+                
+                <path d="M 0 16 Q 0 0 16 0 L 264 0 Q 280 0 280 16 L 280 40 L 0 40 Z" fill="#1e3a8a" filter="url(#sticker-edge)" />
+                
+                <text x="16" y="25" class="card-head">ACCESS CARD</text>
+                <text x="264" y="25" class="card-head" text-anchor="end">NO. 9001</text>
+                
+                <text x="140" y="85" class="card-name" text-anchor="middle">Aatish Ajay</text>
+                <text x="140" y="112" class="card-role-title" text-anchor="middle">BACKEND · AI · STUDENT</text>
+                
+                <line x1="20" y1="135" x2="260" y2="135" stroke="#dfe3e9" stroke-width="1.5" stroke-dasharray="4 4" />
+                
+                <text x="20" y="165" class="card-label">STATUS</text>
+                <circle cx="145" cy="160" r="4.5" fill="#1e3a8a" />
+                <text x="260" y="165" class="card-val-accent" text-anchor="end">open for hire</text>
+                
+                <line x1="20" y1="185" x2="260" y2="185" stroke="#dfe3e9" stroke-width="1.5" stroke-dasharray="4 4" />
+                <text x="20" y="215" class="card-label">ROLE</text>
+                <text x="260" y="215" class="card-val" text-anchor="end">backend / ml</text>
+                
+                <line x1="20" y1="235" x2="260" y2="235" stroke="#dfe3e9" stroke-width="1.5" stroke-dasharray="4 4" />
+                <text x="20" y="265" class="card-label">EMAIL</text>
+                <text x="260" y="265" class="card-val" text-anchor="end">aatishajay@gmail.com</text>
+                
+                <text x="140" y="295" class="card-foot" text-anchor="middle">ssh aatish@portfolio -</text>
+                <text x="140" y="310" class="card-foot" text-anchor="middle">online</text>
+                
+                <g transform="translate(250, 0)">
+                    <circle cx="2" cy="4" r="11" fill="#101218" opacity="0.3" />
+                    <circle cx="0" cy="0" r="11" fill="#d0312d" stroke="#101218" stroke-width="2.5" />
+                    <circle cx="-3" cy="-3" r="3.5" fill="#ff7a7a" opacity="0.9" />
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

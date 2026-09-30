@@ -1,5 +1,10 @@
 <div align="center">
 
+<picture>
+  <img alt="Backend Architect Portfolio" src="./portfolio_hero.svg?raw=true" width="100%">
+</picture>
+
+<br />
 # Aatish Ajay
 
 **`FULL-STACK DEVELOPER`**
