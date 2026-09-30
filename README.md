@@ -5,15 +5,22 @@
 </picture>
 
 <br />
-# Aatish Ajay
 
-**`FULL-STACK DEVELOPER`**
+_"I'm a computer science student focused on backend systems and machine learning. Most of my days are spent writing code, reading papers, and **breaking things on purpose** to understand how they work."_
 
-"I’m a passionate developer who enjoys building end-to-end applications that are scalable and user-friendly. I spend my days (and sometimes nights) diving into system architecture and refining frontend interactions."
+<br />
 
----
+### 🧰 Tech Stack & Tools
 
-### 🌐 Socials
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=py,nodejs,go,rust,java,spring,pytorch,postgres,redis,docker,kubernetes,aws,kafka,linux,git,github,ts,react,html,css&perline=10" alt="Tech Stack" />
+</a>
+
+<br />
+<br />
+
+### 🌐 Connect with me
+
 <a href="https://www.linkedin.com/in/aatish-ajay">
   <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
@@ -22,24 +29,4 @@
   <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" />
 </a>
 
-<br />
-<br />
-
-### 🧰 Languages and Tools
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="35" title="Java"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="35" title="Spring Boot"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" width="35" title="TypeScript"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="35" title="Git"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="35" title="Linux"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" width="35" title="HTML5"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" width="35" title="CSS3"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="35" title="JavaScript"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="35" title="React"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="35" title="Node.js"/> &nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" width="35" title="Python"/> &nbsp;
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="35" title="GitHub" style="background-color: white; border-radius: 50%;"/>
-
-<br />
-<br />
-
+</div>
