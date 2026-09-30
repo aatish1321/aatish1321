@@ -13,7 +13,7 @@ _"I'm a computer science student focused on backend systems and machine learning
 ### 🧰 Tech Stack & Tools
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=py,nodejs,go,rust,java,spring,pytorch,postgres,redis,docker,kubernetes,aws,kafka,linux,git,github,ts,react,html,css&perline=10" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=py,fastapi,java,spring,js,nodejs,postgres,mongodb,docker,git,linux" alt="Tech Stack" />
 </a>
 
 <br />
